@@ -145,14 +145,13 @@ body {
     width: 90%;
     max-width: 1400px;
     margin: 0 auto;
-    background-color: rgb(63, 62, 62);
+    background-color: rgb(22, 21, 21);
 }
 
 a {
     text-decoration: none;
     color: whitesmoke;
     margin-left: 50px;
-    align-self: baseline;
 }
 
 .d-flex {
@@ -162,6 +161,9 @@ a {
 h1 {
     color: gold;
     margin: 200px 130px;
+}
+p {
+    color: whitesmoke;
 }
 
 /* END Global Styles */
@@ -180,22 +182,25 @@ h1 {
 #skull {
     position: absolute;
 }
-.menu {
-    flex-direction:column;
-    justify-content: center;
-    padding: 1em;
-    background-color: black;
-    width: fit-content;
-    height: fit-content;
+
+.sidebar {
+    width: 70px;
     position: fixed;
+    z-index: 1;
     right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 16px;
 }
-.menu p {
-    font-size: x-small;
+
+.sidebar a {
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    display: block;
 }
-.menu .nool {
-    margin-top: 150px;
-}
+
 .triangle-left {
     width: 0;
     height: 0;
@@ -203,7 +208,6 @@ h1 {
     border-right: 400px solid gold;
     border-bottom: 200px solid transparent;
     margin-left: 20px;
-    background-color: transparent;
 }
 
 .hero {
@@ -227,35 +231,102 @@ h1 {
 }
 
 .header {
-    background-color: rgb(68, 63, 63);
+    background-color: rgb(22, 21, 21);
+    padding-top: 100px;
 }
 
 .hero-footer a {
     color: whitesmoke;
     text-decoration: underline;
-    
+    margin: 160px 30px;
 }
+
 #first-page {
     color: gold;
     font-size: x-large;
-    border-bottom: 30px;
+    padding-right: 60px;
+    border-bottom: 2px solid;
+    text-decoration: none;
 }
+
+#paintings {
+    text-align: end;
+}
+
+#paintings h1 {
+    margin: 120px 60px 0px auto;
+}
+
 .second-page-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    text-align: left;
-    }
+    margin: 100px 0px;
+}
+
 .second-page-grid p {
     color: whitesmoke;
-    text-align: center;
+    text-align:end;
     padding-top: 30px;
+    align-content:space-between;
 }
-.second-page-grid img{
-    height: 350px;
-    margin-left: 30px;
+
+.second-page-grid img {
+    height: 300px;
+    margin-left: 90px;
+
+}
+
+#second-page {
+    color: gold;
+    font-size: x-large;
+    padding-right: 60px;
+    border-bottom: 2px solid;
+    text-decoration: none;
+}
+
+.mask {
+    height: 110%;
+}
+.third-page-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+#story {
+    align-content: center;
+    margin: 0 auto;
+}
+#story h1 {
+    margin: 120px 60px 0px auto;
+}
+#third-page {
+    color: gold;
+    font-size: x-large;
+    padding-right: 60px;
+    border-bottom: 2px solid;
+    text-decoration: none;
+}
+.image {
+    height: 180px;
+    -webkit-mask-image: url(/assets/images/text.png);
+    mask-image: url(/assets/images/text.png);
+    margin: 0;
+    
+}
+.image-mask {
+    background: url(/assets/images/diamonds.jpg);
+    background-size: cover;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 70%;
+    mask-size: 70%;
+    margin: 0;
+    
 }
 
 /* END Main Styles */
