@@ -172,11 +172,29 @@ h1 {
 .space-between {
     justify-content: space-between;
 }
+
 .sculptures {
     position: relative;
 }
+
 #skull {
     position: absolute;
+}
+.menu {
+    flex-direction:column;
+    justify-content: center;
+    padding: 1em;
+    background-color: black;
+    width: fit-content;
+    height: fit-content;
+    position: fixed;
+    right: 0;
+}
+.menu p {
+    font-size: x-small;
+}
+.menu .nool {
+    margin-top: 150px;
 }
 .triangle-left {
     width: 0;
@@ -186,7 +204,7 @@ h1 {
     border-bottom: 200px solid transparent;
     margin-left: 20px;
     background-color: transparent;
-  }
+}
 
 .hero {
     position: relative;
@@ -203,8 +221,8 @@ h1 {
 
 #logo {
     margin: 0;
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
     margin-left: 50px;
 }
 
@@ -212,10 +230,32 @@ h1 {
     background-color: rgb(68, 63, 63);
 }
 
-.wrapper {
-    width: 90%;
-    max-width: 1400px;
-    margin: 0 auto;
+.hero-footer a {
+    color: whitesmoke;
+    text-decoration: underline;
+    
+}
+#first-page {
+    color: gold;
+    font-size: x-large;
+    border-bottom: 30px;
+}
+.second-page-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    text-align: left;
+    }
+.second-page-grid p {
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 30px;
+}
+.second-page-grid img{
+    height: 350px;
+    margin-left: 30px;
 }
 
 /* END Main Styles */
